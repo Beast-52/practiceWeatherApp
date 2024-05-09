@@ -1,83 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather - App</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header class="header" id="header">
-        <nav class="navbar container">
-           <a href="#" class="brand">Weather app</a>
-           <div class="search">
-              <form class="search-form">
-                 <input type="text" name="search" class="search-input" placeholder="Search Location" autofocus>
-                 <button type="submit" class="search-submit" disabled><i class="bx bx-search"></i></button>
-              </form>
-           </div>
-           <div class="menu" id="menu">
-              <ul class="menu-inner">
-                 <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                 <li class="menu-item"><a href="#" class="menu-link">About</a></li>
-                 <li class="menu-item"><a href="#" class="menu-link">Features</a></li>
-                 <li class="menu-item"><a href="#" class="menu-link">Github</a></li>
-              </ul>
-           </div>
-           <div class="burger" id="burger">
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-           </div>
-        </nav>
-     </header>
-
-     <!-- cards -->
-     <div class="Weather_title">
-        <h1>Weather Of <span class="Weather_country"></span></h1>
-     </div>
-     <div class="group_cards">
-        <div class="card">
-         <div class="card_top">
-            <h2>Temperature</h2>
-         </div>
-         <img class="Weather_img" src="./images/1.png" alt="">
-         <div class="card_bottom">
-            <h1 class="temp_a_value">20 °C</h1>
-            <span class="temp">Temperature is <span class="temp_value"></span></span>
-            <span class="min_temp">Min Temperature is <span class="min_temp_value"></span></span>
-            <span class="max_temp">Max Temperature is <span class="max_temp_value"></span></span>
-         </div>
+      <nav class="navbar container">
+        <a href="#" class="brand">Weather app</a>
+        <div class="search">
+          <form class="search-form">
+            <input
+              type="text"
+              name="search"
+              class="search-input"
+              placeholder="Search Location"
+              autofocus
+            />
+            <button type="submit" class="search-submit">
+              Search
+            </button>
+          </form>
         </div>
-
-        <div class="card">
-         <div class="card_top">
-            <h2>Humidity</h2>
-         </div>
-         <img class="Weather_img" src="./images/2.jpeg" alt="">
-         <div class="card_bottom">
-            <h1 class="humidity_a_value">35 %</h1>
-            <span class="wind_deg">Wind Degree is <span class="wind_deg_value"></span></span>
-            <span class="feel_like">Feel Like <span class="feel_like_value"></span></span>
-            <span class="humidity">Humidity<span class="humidity_value"></span></span>
-         </div>
+        <div class="menu" id="menu">
+          <ul class="menu-inner">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Features</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Github</a></li>
+          </ul>
         </div>
-
-        <div class="card">
-         <div class="card_top">
-            <h2>Wind info</h2>
-         </div>
-         <img class="Weather_img" src="./images/3.png" alt="">
-         <div class="card_bottom">
-            <h1 class="wind_info_a_value">20 km/h</h1>
-            <span class="wind_speed">Wind Speed is <span class="wind_speed_value"></span></span>
-            <span class="sun_rise_time">Sunrise Time is <span class="sun_rise_time_value"></span></span>
-            <span class="sun_set_time">Sunset Time is <span class="sun_set_time_value"></span></span>
-         </div>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
         </div>
-     </div>
+      </nav>
+    </header>
 
-     <section>
+    <!-- cards -->
+    <div class="Weather_title">
+      <h1>Weather Of <span class="Weather_country"></span></h1>
+    </div>
+    <div class="group_cards">
+    </div>
+
+    <section>
       <h1 class="other_loction">Weather of other nearest locations</h1>
       <div class="tbl-header">
         <table cellpadding="0" cellspacing="0" border="0">
@@ -115,49 +87,48 @@
               <td class="windSpeed">4</td>
             </tr>
             <tr>
-               <td class="o_loction">Dubia</td>
-               <td class="cloud_pct">1</td>
-               <td class="feelLike">3</td>
-               <td class="Humidity">4</td>
-               <td class="max_tep">7</td>
-               <td class="min_tep">8</td>
-               <td class="sunr">2</td>
-               <td class="sunst">5</td>
-               <td class="tep">3</td>
-               <td class="widDegree">7</td>
-               <td class="windSpeed">4</td>
+              <td class="o_loction">Dubia</td>
+              <td class="cloud_pct">1</td>
+              <td class="feelLike">3</td>
+              <td class="Humidity">4</td>
+              <td class="max_tep">7</td>
+              <td class="min_tep">8</td>
+              <td class="sunr">2</td>
+              <td class="sunst">5</td>
+              <td class="tep">3</td>
+              <td class="widDegree">7</td>
+              <td class="windSpeed">4</td>
             </tr>
             <tr>
-               <td class="o_loction">pakistan</td>
-               <td class="cloud_pct">1</td>
-               <td class="feelLike">3</td>
-               <td class="Humidity">4</td>
-               <td class="max_tep">7</td>
-               <td class="min_tep">8</td>
-               <td class="sunr">2</td>
-               <td class="sunst">5</td>
-               <td class="tep">3</td>
-               <td class="widDegree">7</td>
-               <td class="windSpeed">4</td>
+              <td class="o_loction">pakistan</td>
+              <td class="cloud_pct">1</td>
+              <td class="feelLike">3</td>
+              <td class="Humidity">4</td>
+              <td class="max_tep">7</td>
+              <td class="min_tep">8</td>
+              <td class="sunr">2</td>
+              <td class="sunst">5</td>
+              <td class="tep">3</td>
+              <td class="widDegree">7</td>
+              <td class="windSpeed">4</td>
             </tr>
             <tr>
-               <td class="o_loction">Lahore</td>
-               <td class="cloud_pct">1</td>
-               <td class="feelLike">3</td>
-               <td class="Humidity">4</td>
-               <td class="max_tep">7</td>
-               <td class="min_tep">8</td>
-               <td class="sunr">2</td>
-               <td class="sunst">5</td>
-               <td class="tep">3</td>
-               <td class="widDegree">7</td>
-               <td class="windSpeed">4</td>
+              <td class="o_loction">Lahore</td>
+              <td class="cloud_pct">1</td>
+              <td class="feelLike">3</td>
+              <td class="Humidity">4</td>
+              <td class="max_tep">7</td>
+              <td class="min_tep">8</td>
+              <td class="sunr">2</td>
+              <td class="sunst">5</td>
+              <td class="tep">3</td>
+              <td class="widDegree">7</td>
+              <td class="windSpeed">4</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
-    
-</body>
-    <script src="./script.js"></script>
+  </body>
+  <script src="./script.js"></script>
 </html>
