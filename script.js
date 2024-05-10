@@ -30,7 +30,7 @@ async function fetchdata() {
     } else if (data.weather[0].id === 522) {
       imageUrl = "./images/heavy-rain.png";
     } else {
-      imageUrl = "./images/sun.png";
+      imageUrl="./images/sun.png"
     }
     const clutter = `<div class="card">
         <div class="card_top">
@@ -39,6 +39,7 @@ async function fetchdata() {
         <img class="Weather_img" src=${imageUrl}  alt="" />
         <div class="card_bottom">
           <h1 class="temp_a_value">${data.main.temp} &deg;C</h1>
+          <span class="temp">Temperature is <span class="temp_value"></span></span>
           <span class="min_temp">Min Temperature is <span class="min_temp_value">${
             data.main.temp_min
           }&deg;C</span></span>
